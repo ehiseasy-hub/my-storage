@@ -1,0 +1,21 @@
+<tables>
+  <caption>Size guides(inches)</caption>
+  <tr>
+    <th></th>
+    <th>S</th>
+    <th>M</th>
+    <th>L</th>
+  </tr>
+  <tr>
+    <th>width</th>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <th>length</th>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+  </tr>
+  </tables>
