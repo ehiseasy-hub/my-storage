@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+<form action="" method="">
+  <h2>Important documentation !</h2>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required
+            pattern="[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]+">
+  </div>
+  <div>
+    <label for="address">Address</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="message">Leave a message</label>
+    <textarea name="message" id="message" required></textarea>
+  </div>
+  <div> 
+    <label for="review">Review</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <button type="submit">Form complete</button>
+</form>
+    <script src="./script.js"></script>
+  </body>
+</html>
