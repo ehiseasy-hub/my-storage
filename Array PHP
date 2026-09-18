@@ -1,0 +1,29 @@
+<?php
+$brothers = array(
+'Eze' => array(
+'age' => 20,
+'job' => 'none',
+'state' => 'LN',
+),
+'jay' => array(
+'age' => 24,
+'job' => 'photographer',
+'state' => 'LN',
+),
+'Kane' => array(
+'age' => 32,
+'job' => 'logistics',
+'state' => 'LA',
+),
+'Rob' => array(
+'age' => 29,
+'job' => 'manager',
+'state' => 'NJ',
+),
+);
+
+echo '<pre>';
+print_r( $brothers );
+echo '</pre>';
+
+echo '<p>'. $brothers['Rob']['state'] . '</p>';
