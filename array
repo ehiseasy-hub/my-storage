@@ -1,0 +1,30 @@
+<h2>Contact <?php echo $author; ?></h2>
+	<form name="contact" method="POST">
+		<div>
+			<?php if ( ! empty( $form_data ) ) check_required( $form_data['name'] ); ?>
+			<label for="name">Name:</label> <input type="text" name="name" placeholder="Your Name" required/>
+		</div>
+		<div>
+			<?php if ( ! empty( $form_data ) ) check_required( $form_data['email'] ); ?>
+			<label for="email">Email:</label> <input type="email" name="email" placeholder="Your Email" required/>
+		</div>
+		<div>
+			<p>Reason for Contact:</p>
+			<select name="reason" required>
+				<option value="Consult">Consultation</option>
+				<option value="Question">Question</option>
+				<option value="Say Hello">Say Hello</option>
+			</select>
+		</div>
+		<div>
+			<label for="message">What's your message?</label><br/>
+			<?php if ( ! empty( $form_data ) ) check_required( $form_data['message'] ); ?>
+			<textarea name="message" required></textarea>
+		</div>
+		<div><input type="submit" name="submit" value="Submit" /></div>
+	</form>
+
+<?php 
+	if ( true === $form_is_complete) {
+		send_message( $form_data );
+	}
